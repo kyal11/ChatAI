@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:submission1/helper/util.dart';
 import 'package:submission1/ui/home_screen.dart';
 
 void main() {
@@ -13,9 +14,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'ChatAi',
+      // debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        scaffoldBackgroundColor: scaffoldBgColor,
         fontFamily: 'Roboto',
       ),
       home: HomeScreen()

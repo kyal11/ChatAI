@@ -1,5 +1,6 @@
 import 'package:submission1/main.dart';
 import 'package:flutter/material.dart';
+import 'chat_screen.dart';
 
 class HomeScreen extends StatelessWidget{
 
@@ -17,14 +18,17 @@ class HomeScreen extends StatelessWidget{
               'images/ChatAi-removebg.png',
               width: 400,
               height: 400,
-            ), // Jarak antara gambar dan tombol
+            ),
         Padding(
           padding: const EdgeInsets.only(left: 32.0, right: 32.0),
           child: SizedBox(
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () {
-                // Navigasi ke screen lain
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ChatScreen()),
+                );
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.white60,
