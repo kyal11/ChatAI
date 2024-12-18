@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:submission1/helper/assets_manager.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:submission1/helper/util.dart';
+import 'package:submission1/services/api_service.dart';
 import 'package:submission1/ui/setting_screen.dart';
 import 'package:submission1/widget/chat_widget.dart';
 
@@ -88,7 +89,13 @@ class _ChatScreenState extends State<ChatScreen> {
                           hintStyle: TextStyle(color: Colors.black)),
                     )),
                     IconButton(
-                        onPressed: () {},
+                        onPressed: () async {
+                          try {
+                            await ApiService.getModels();
+                          } catch (error) {
+                            print("error $error");
+                          }
+                        },
                         icon: const Icon(Icons.send, color: Colors.black))
                   ],
                 ),

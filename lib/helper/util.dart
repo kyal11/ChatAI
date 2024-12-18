@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 const scaffoldBgColor = const Color(0xFFF9F9FA);
 const cardColorAi = const Color(0xF999B9DFF);
 const cardColorUser = const Color(0xFFFCFCEA);
+String defaultModel= 'gpt-4o-mini';
 
 final messageExample = [
   {
@@ -10,7 +11,8 @@ final messageExample = [
     "indexChat": 0
   },
   {
-    "msg": "Tentu saja saya bisa membantu anda, sekiranya anda ingin membuat candi seperti apa?",
+    "msg":
+        "Tentu saja saya bisa membantu anda, sekiranya anda ingin membuat candi seperti apa?",
     "indexChat": 1
   },
   {
@@ -18,7 +20,8 @@ final messageExample = [
     "indexChat": 0
   },
   {
-    "msg": "Baik, untuk relief cerita Ramayana, kita perlu menentukan beberapa aspek seperti bahan yang digunakan, ukuran candi, dan detail cerita yang ingin ditampilkan.",
+    "msg":
+        "Baik, untuk relief cerita Ramayana, kita perlu menentukan beberapa aspek seperti bahan yang digunakan, ukuran candi, dan detail cerita yang ingin ditampilkan.",
     "indexChat": 1
   },
   {
@@ -26,7 +29,8 @@ final messageExample = [
     "indexChat": 0
   },
   {
-    "msg": "Bagus! Andesit memang bahan utama yang sering digunakan. Lalu, berapa tinggi candi yang anda inginkan?",
+    "msg":
+        "Bagus! Andesit memang bahan utama yang sering digunakan. Lalu, berapa tinggi candi yang anda inginkan?",
     "indexChat": 1
   },
   {
@@ -34,27 +38,33 @@ final messageExample = [
     "indexChat": 0
   },
   {
-    "msg": "Tinggi 47 meter akan membutuhkan perencanaan struktural yang baik. Apakah ada tambahan fitur unik yang anda inginkan?",
+    "msg":
+        "Tinggi 47 meter akan membutuhkan perencanaan struktural yang baik. Apakah ada tambahan fitur unik yang anda inginkan?",
     "indexChat": 1
   },
   {
-    "msg": "Saya ingin ada tempat khusus untuk pertunjukan seni di sekitar candi.",
+    "msg":
+        "Saya ingin ada tempat khusus untuk pertunjukan seni di sekitar candi.",
     "indexChat": 0
   },
   {
-    "msg": "Ide yang sangat menarik! Kita bisa menambahkan area teater terbuka untuk pertunjukan seni.",
+    "msg":
+        "Ide yang sangat menarik! Kita bisa menambahkan area teater terbuka untuk pertunjukan seni.",
     "indexChat": 1
   },
   {
-    "msg": "Bagaimana dengan pencahayaan di malam hari? Saya ingin candi tetap terlihat indah.",
+    "msg":
+        "Bagaimana dengan pencahayaan di malam hari? Saya ingin candi tetap terlihat indah.",
     "indexChat": 0
   },
   {
-    "msg": "Tentu, pencahayaan bisa menggunakan lampu LED hemat energi yang dirancang khusus untuk menonjolkan detail relief candi.",
+    "msg":
+        "Tentu, pencahayaan bisa menggunakan lampu LED hemat energi yang dirancang khusus untuk menonjolkan detail relief candi.",
     "indexChat": 1
   },
   {
-    "msg": "Terima kasih atas bantuannya! Saya sangat terbantu dengan rencana ini.",
+    "msg":
+        "Terima kasih atas bantuannya! Saya sangat terbantu dengan rencana ini.",
     "indexChat": 0
   },
 ];
